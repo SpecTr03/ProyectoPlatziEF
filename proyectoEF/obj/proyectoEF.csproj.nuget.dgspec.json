@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cifu1\\source\\repos\\PROYECTOEF\\proyectoEF\\proyectoEF.csproj": {}
+    "C:\\Users\\cifu1\\source\\repos\\proyectoEF\\proyectoEF\\proyectoEF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cifu1\\source\\repos\\PROYECTOEF\\proyectoEF\\proyectoEF.csproj": {
+    "C:\\Users\\cifu1\\source\\repos\\proyectoEF\\proyectoEF\\proyectoEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cifu1\\source\\repos\\PROYECTOEF\\proyectoEF\\proyectoEF.csproj",
+        "projectUniqueName": "C:\\Users\\cifu1\\source\\repos\\proyectoEF\\proyectoEF\\proyectoEF.csproj",
         "projectName": "proyectoEF",
-        "projectPath": "C:\\Users\\cifu1\\source\\repos\\PROYECTOEF\\proyectoEF\\proyectoEF.csproj",
+        "projectPath": "C:\\Users\\cifu1\\source\\repos\\proyectoEF\\proyectoEF\\proyectoEF.csproj",
         "packagesPath": "C:\\Users\\cifu1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cifu1\\source\\repos\\PROYECTOEF\\proyectoEF\\obj\\",
+        "outputPath": "C:\\Users\\cifu1\\source\\repos\\proyectoEF\\proyectoEF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cifu1\\AppData\\Roaming\\NuGet\\NuGet.Config",
