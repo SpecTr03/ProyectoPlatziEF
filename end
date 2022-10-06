@@ -1,0 +1,30 @@
+[33mcommit 69f376235dbd59a14f129f4d66537e67bbedb970[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: sebastian <sebastian.cifuentes0808@gmail.com>
+Date:   Thu Oct 6 10:38:30 2022 -0500
+
+    Agregando fluent api en modelo categoria
+
+[33mcommit fb09f20ef7a2837671dcafc9c7c916cf2b9b575b[m
+Merge: 5c513d9 d6238ca
+Author: sebastian <sebastian.cifuentes0808@gmail.com>
+Date:   Thu Oct 6 09:55:00 2022 -0500
+
+    Merge branch "main" readme.md
+
+[33mcommit 5c513d9f838b67c4a1620776e4d1ce89a76fcba3[m
+Author: sebastian <sebastian.cifuentes0808@gmail.com>
+Date:   Thu Oct 6 09:53:28 2022 -0500
+
+    Configuracion de la conexion a la BD
+
+[33mcommit d6238ca483b470d1166c7e619920c9ea1f7db9db[m
+Author: Sebastian Cifuentes Florez <77464881+SpecTr03@users.noreply.github.com>
+Date:   Thu Oct 6 08:54:21 2022 -0500
+
+    Create README.md
+
+[33mcommit 15b18805c7f81f5915f56c640a38db3187e9a8ce[m
+Author: sebastian <sebastian.cifuentes0808@gmail.com>
+Date:   Thu Oct 6 08:53:17 2022 -0500
+
+    Primer commit con modelos y etiquetas
