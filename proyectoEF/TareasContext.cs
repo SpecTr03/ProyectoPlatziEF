@@ -18,5 +18,23 @@ namespace proyectoEF
         public DbSet<Tarea> tareas { get; set; }
 
         public TareasContext(DbContextOptions<TareasContext> options) : base(options) { }
+
+        //Aqui hacemos uso de FluentApi
+        /*
+         * FluenApi es una forma avanzada En la que se puede configurar los modelos, nos permite configurar las tablas y los atributos, agregando validaciones y 
+         * restricciones.
+         */
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Categoria>(categoria =>
+            {
+                categoria.ToTable("Categoria");
+                categoria.HasKey(p => p.categoriaId);
+
+                categoria.Property(p => p.nombre).IsRequired().HasMaxLength(150);
+
+                categoria.Property(p => p.descripcion);
+            });
+        }
     }
 }
