@@ -32,3 +32,5 @@ C:\Users\cifu1\source\repos\proyectoEF\proyectoEF\obj\Debug\net6.0\refint\proyec
 C:\Users\cifu1\source\repos\proyectoEF\proyectoEF\obj\Debug\net6.0\proyectoEF.pdb
 C:\Users\cifu1\source\repos\proyectoEF\proyectoEF\obj\Debug\net6.0\proyectoEF.genruntimeconfig.cache
 C:\Users\cifu1\source\repos\proyectoEF\proyectoEF\obj\Debug\net6.0\ref\proyectoEF.dll
+C:\Users\cifu1\source\repos\proyectoEF\proyectoEF\bin\Debug\net6.0\Humanizer.dll
+C:\Users\cifu1\source\repos\proyectoEF\proyectoEF\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll

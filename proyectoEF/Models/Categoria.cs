@@ -15,6 +15,8 @@ namespace proyectoEF.Models
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
 
+        public int Peso { get; set; }
+
         //Creando relacion con Tarea
         public virtual ICollection<Tarea> Tareas { get; set; }
     }

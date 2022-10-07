@@ -26,14 +26,43 @@ namespace proyectoEF
          */
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //Agregando datos semilla a las tablas de Categoria en la DB (datos inciales)
+            List<Categoria> categoriasInit = new List<Categoria>();
+            //Recordar usar un Guid generator para que no se cree nuevas claves
+            categoriasInit.Add(new Categoria() { CategoriaId = Guid.Parse("579ca17b-a05b-41e2-94fe-e90db5147889"), Nombre = "Actividades pendientes", Peso = 20 });
+            categoriasInit.Add(new Categoria() { CategoriaId = Guid.Parse("579ca17b-a05b-41e2-94fe-e90db5147823"), Nombre = "Actividades personales", Peso = 50 });
+
             modelBuilder.Entity<Categoria>(categoria =>
             {
                 categoria.ToTable("Categoria");
                 categoria.HasKey(p => p.CategoriaId);
 
                 categoria.Property(p => p.Nombre).IsRequired().HasMaxLength(150);
+                categoria.Property(p => p.Descripcion).IsRequired(false);
+                categoria.Property(p => p.Peso);
 
-                categoria.Property(p => p.Descripcion);
+                categoria.HasData(categoriasInit);
+            });
+
+            //Agregando datos semilla a las tablas de Tarea en la DB (datos inciales)
+            List<Tarea> tareasInit = new List<Tarea>();
+
+            tareasInit.Add(new Tarea()
+            {
+                TareaId = Guid.Parse("579ca17b-a05b-41e2-94fe-e90db5147810"),
+                CategoriaId = Guid.Parse("579ca17b-a05b-41e2-94fe-e90db5147889"),
+                PrioridadTarea = Prioridad.Media,
+                Titulo = "Pago de servicios publicos",
+                FechaCreacion = DateTime.Now
+            });
+
+            tareasInit.Add(new Tarea()
+            {
+                TareaId = Guid.Parse("579ca17b-a05b-41e2-94fe-e90db5147811"),
+                CategoriaId = Guid.Parse("579ca17b-a05b-41e2-94fe-e90db5147823"),
+                PrioridadTarea = Prioridad.Baja,
+                Titulo = "Terminar de ver pelicula en netflix",
+                FechaCreacion = DateTime.Now
             });
 
             modelBuilder.Entity<Tarea>(tarea =>
@@ -44,10 +73,13 @@ namespace proyectoEF
                 tarea.HasOne(p => p.Categoria).WithMany(p => p.Tareas).HasForeignKey(p => p.CategoriaId);
 
                 tarea.Property(p => p.Titulo).IsRequired().HasMaxLength(200);
-                tarea.Property(p => p.Descripcion);
+                tarea.Property(p => p.Descripcion).IsRequired(false);
                 tarea.Property(p => p.PrioridadTarea);
-                tarea.Property(p => p.FechaCreacion);
+                tarea.Property(p => p.FechaCreacion).HasDefaultValue(DateTime.Now); ;
+
                 tarea.Ignore(p => p.Resumen);
+
+                tarea.HasData(tareasInit);
             });
         }
     }
